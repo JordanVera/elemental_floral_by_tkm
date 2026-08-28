@@ -127,7 +127,7 @@ export default function InquiryForm() {
       <Button
         type="submit"
         disabled={loading}
-        className="w-full bg-[#539397] text-black hover:bg-[#7eaeb1] transition-colors text-xs tracking-[0.2em] uppercase h-12 rounded-none"
+        className="w-full bg-[#f59a88] text-black hover:bg-[#f8b5a8] transition-colors text-xs tracking-[0.2em] uppercase h-12 rounded-none"
       >
         {loading ? (
           <>

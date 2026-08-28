@@ -16,7 +16,7 @@ export default function PortfolioTeaser() {
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="mb-3 text-[10px] tracking-[0.35em] text-[#539397] uppercase"
+              className="mb-3 text-[10px] tracking-[0.35em] text-[#f59a88] uppercase"
             >
               Our Work
             </motion.p>
@@ -38,7 +38,7 @@ export default function PortfolioTeaser() {
           >
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-2 text-xs tracking-[0.2em] text-[#539397] uppercase transition-all duration-200 hover:gap-3"
+              className="inline-flex items-center gap-2 text-xs tracking-[0.2em] text-[#f59a88] uppercase transition-all duration-200 hover:gap-3"
             >
               View All Work <ArrowRight size={12} />
             </Link>

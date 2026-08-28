@@ -45,11 +45,11 @@ export default function Navbar() {
       >
         <Link href="/" className="flex shrink-0 items-center gap-2 pl-1">
           <Image
-            src="/logo-light.png"
+            src="/logo-white.png"
             alt={COMPANY.name}
             width={140}
             height={86}
-            className="h-10 w-auto sm:h-12"
+            className="h-12 w-auto sm:h-16"
             priority
           />
         </Link>
@@ -67,14 +67,14 @@ export default function Navbar() {
                 className={cn(
                   'group relative rounded-full px-2.5 py-1.5 text-[11px] font-medium tracking-widest uppercase transition-colors xl:px-3',
                   isActive
-                    ? 'text-[#539397]'
+                    ? 'text-[#f59a88]'
                     : 'text-white/80 hover:text-white',
                 )}
               >
                 {link.label}
                 <span
                   className={cn(
-                    'absolute inset-x-3.5 -bottom-0.5 h-px bg-[#539397] transition-transform duration-300',
+                    'absolute inset-x-3.5 -bottom-0.5 h-px bg-[#f59a88] transition-transform duration-300',
                     isActive
                       ? 'scale-x-100'
                       : 'scale-x-0 group-hover:scale-x-100',
@@ -89,18 +89,18 @@ export default function Navbar() {
           <SocialLinks
             className="mr-4 md:mr-2"
             iconSize={18}
-            linkClassName="text-white/70 hover:text-[#539397]"
+            linkClassName="text-white/70 hover:text-[#f59a88]"
           />
-          <a
+          {/* <a
             href={`tel:${COMPANY.phoneHref}`}
-            className="hidden items-center gap-2 rounded-full px-3 py-2 text-[#539397] text-xs tracking-wide transition-colors hover:text-[#7eaeb1] xl:flex"
+            className="hidden items-center gap-2 rounded-full px-3 py-2 text-[#f59a88] text-xs tracking-wide transition-colors hover:text-[#f8b5a8] xl:flex"
           >
             <Phone size={14} />
             {COMPANY.phone}
-          </a>
+          </a> */}
           <Link
             href="/contact"
-            className="hidden items-center rounded-full border border-[#539397] px-3.5 py-1.5 text-[10px] tracking-[0.2em] uppercase text-[#539397] transition-all duration-200 hover:bg-[#539397] hover:text-black sm:inline-flex"
+            className="hidden items-center rounded-full border border-[#f59a88] px-3.5 py-1.5 text-[10px] tracking-[0.2em] uppercase text-[#f59a88] transition-all duration-200 hover:bg-[#f59a88] hover:text-black sm:inline-flex"
           >
             Get in Touch
           </Link>
@@ -143,10 +143,10 @@ export default function Navbar() {
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      'rounded-xl px-3 py-2.5 text-sm font-medium transition hover:bg-[#539397]/10',
+                      'rounded-xl px-3 py-2.5 text-sm font-medium transition hover:bg-[#f59a88]/10',
                       isActive
-                        ? 'text-[#539397]'
-                        : 'text-white hover:text-[#539397]',
+                        ? 'text-[#f59a88]'
+                        : 'text-white hover:text-[#f59a88]',
                     )}
                   >
                     {link.label}
@@ -158,21 +158,21 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="rounded-xl bg-[#539397] px-4 py-3 text-center text-sm font-semibold tracking-[0.15em] uppercase text-black"
+                className="rounded-xl bg-[#f59a88] px-4 py-3 text-center text-sm font-semibold tracking-[0.15em] uppercase text-black"
               >
                 Get in Touch
               </Link>
               <a
                 href={`tel:${COMPANY.phoneHref}`}
-                className="flex items-center justify-center gap-2 rounded-xl border border-[#539397]/30 px-4 py-3 text-center text-sm font-medium text-white"
+                className="flex items-center justify-center gap-2 rounded-xl border border-[#f59a88]/30 px-4 py-3 text-center text-sm font-medium text-white"
               >
-                <Phone size={14} className="text-[#539397]" />
+                <Phone size={14} className="text-[#f59a88]" />
                 {COMPANY.phone}
               </a>
               <div className="flex justify-center pt-1">
                 <SocialLinks
                   iconSize={20}
-                  linkClassName="text-white/70 hover:text-[#539397]"
+                  linkClassName="text-white/70 hover:text-[#f59a88]"
                 />
               </div>
             </div>

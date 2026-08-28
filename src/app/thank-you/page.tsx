@@ -13,8 +13,8 @@ export default function ThankYouPage() {
   return (
     <section className="min-h-[70vh] flex items-center justify-center px-6 py-32">
       <div className="max-w-lg text-center flex flex-col items-center gap-6">
-        <CheckCircle size={56} className="text-[#539397]" strokeWidth={1.5} />
-        <p className="text-[#539397] text-[10px] tracking-[0.4em] uppercase">
+        <CheckCircle size={56} className="text-[#f59a88]" strokeWidth={1.5} />
+        <p className="text-[#f59a88] text-[10px] tracking-[0.4em] uppercase">
           Message Received
         </p>
         <h1 className="font-serif text-foreground text-4xl sm:text-5xl">
@@ -28,13 +28,13 @@ export default function ThankYouPage() {
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
           <Link
             href="/"
-            className="px-8 py-3.5 bg-[#539397] text-black text-xs tracking-[0.2em] uppercase font-medium hover:bg-[#7eaeb1] transition-colors duration-200"
+            className="px-8 py-3.5 bg-[#f59a88] text-black text-xs tracking-[0.2em] uppercase font-medium hover:bg-[#f8b5a8] transition-colors duration-200"
           >
             Back to Home
           </Link>
           <a
             href={`tel:${COMPANY.phoneHref}`}
-            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-border text-foreground text-xs tracking-[0.2em] uppercase hover:border-[#539397] hover:text-[#539397] transition-all duration-200"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-border text-foreground text-xs tracking-[0.2em] uppercase hover:border-[#f59a88] hover:text-[#f59a88] transition-all duration-200"
           >
             <Phone size={13} />
             {COMPANY.phone}

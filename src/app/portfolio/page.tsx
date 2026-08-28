@@ -25,7 +25,7 @@ export default function PortfolioPage() {
         />
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 pt-20 text-center">
-          <p className="mb-4 text-[10px] tracking-[0.4em] text-[#539397] uppercase">
+          <p className="mb-4 text-[10px] tracking-[0.4em] text-[#f59a88] uppercase">
             Our Work
           </p>
           <h1 className="font-serif text-5xl text-white sm:text-6xl">
@@ -43,7 +43,7 @@ export default function PortfolioPage() {
               href={COMPANY.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#539397] hover:underline"
+              className="text-[#f59a88] hover:underline"
             >
               {COMPANY.instagramHandle}
             </a>{' '}
@@ -56,7 +56,7 @@ export default function PortfolioPage() {
         <div className="mt-16 text-center">
           <Link
             href="/contact"
-            className="inline-flex bg-[#539397] px-8 py-3.5 text-xs font-medium tracking-[0.2em] text-black uppercase transition-colors duration-200 hover:bg-[#7eaeb1]"
+            className="inline-flex bg-[#f59a88] px-8 py-3.5 text-xs font-medium tracking-[0.2em] text-black uppercase transition-colors duration-200 hover:bg-[#f8b5a8]"
           >
             Start Your Project
           </Link>

@@ -73,12 +73,12 @@ export default async function ProjectPage({ params }: Props) {
         <div className="relative z-10 mx-auto flex min-h-88 max-w-4xl flex-col items-center justify-end px-6 pb-16 pt-32 text-center sm:min-h-104 sm:pb-20">
           <Link
             href="/portfolio"
-            className="mb-6 inline-flex items-center gap-2 text-[10px] tracking-[0.28em] text-white/55 uppercase transition-colors hover:text-[#539397]"
+            className="mb-6 inline-flex items-center gap-2 text-[10px] tracking-[0.28em] text-white/55 uppercase transition-colors hover:text-[#f59a88]"
           >
             <ArrowLeft size={12} />
             All Projects
           </Link>
-          <p className="mb-4 text-[10px] tracking-[0.4em] text-[#539397] uppercase">
+          <p className="mb-4 text-[10px] tracking-[0.4em] text-[#f59a88] uppercase">
             {project.category}
           </p>
           <h1 className="font-serif text-4xl text-white sm:text-6xl">

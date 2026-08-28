@@ -39,7 +39,7 @@ export const SERVICES = [
     title: 'Ceremony Design',
     subtitle: 'Houston Florals',
     description: 'Aisle decorations, ceremony arches, altar florals, petal-strewn aisles, and ceremony installations.',
-    image: '/portfolio/events/01.jpg',
+    image: '/portfolio/events/03.jpg',
     icon: 'briefcase',
   },
   {

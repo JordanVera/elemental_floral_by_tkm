@@ -24,7 +24,7 @@ export default function ContactPage() {
         />
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 pt-20">
-          <p className="text-[#539397] text-[10px] tracking-[0.4em] uppercase mb-4">
+          <p className="text-[#f59a88] text-[10px] tracking-[0.4em] uppercase mb-4">
             Get in Touch
           </p>
           <h1 className="font-serif text-white text-5xl sm:text-6xl">
@@ -37,7 +37,7 @@ export default function ContactPage() {
         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-16">
           <div className="flex flex-col gap-10">
             <div>
-              <p className="text-[#539397] text-[10px] tracking-[0.35em] uppercase mb-4">
+              <p className="text-[#f59a88] text-[10px] tracking-[0.35em] uppercase mb-4">
                 Visit Our Showroom
               </p>
               <h2 className="font-serif text-foreground text-3xl sm:text-4xl">
@@ -56,14 +56,14 @@ export default function ContactPage() {
                   href={`tel:${COMPANY.phoneHref}`}
                   className="flex items-start gap-4 group"
                 >
-                  <div className="w-10 h-10 border border-[#539397]/30 flex items-center justify-center flex-shrink-0 group-hover:border-[#539397] transition-colors">
-                    <Phone size={14} className="text-[#539397]" />
+                  <div className="w-10 h-10 border border-[#f59a88]/30 flex items-center justify-center flex-shrink-0 group-hover:border-[#f59a88] transition-colors">
+                    <Phone size={14} className="text-[#f59a88]" />
                   </div>
                   <div>
                     <p className="text-[10px] tracking-[0.2em] uppercase text-foreground/40 mb-0.5">
                       Phone
                     </p>
-                    <p className="text-foreground group-hover:text-[#539397] transition-colors">
+                    <p className="text-foreground group-hover:text-[#f59a88] transition-colors">
                       {COMPANY.phone}
                     </p>
                   </div>
@@ -75,14 +75,14 @@ export default function ContactPage() {
                   href={`mailto:${COMPANY.email}`}
                   className="flex items-start gap-4 group"
                 >
-                  <div className="w-10 h-10 border border-[#539397]/30 flex items-center justify-center flex-shrink-0 group-hover:border-[#539397] transition-colors">
-                    <Mail size={14} className="text-[#539397]" />
+                  <div className="w-10 h-10 border border-[#f59a88]/30 flex items-center justify-center flex-shrink-0 group-hover:border-[#f59a88] transition-colors">
+                    <Mail size={14} className="text-[#f59a88]" />
                   </div>
                   <div>
                     <p className="text-[10px] tracking-[0.2em] uppercase text-foreground/40 mb-0.5">
                       Email
                     </p>
-                    <p className="text-foreground group-hover:text-[#539397] transition-colors">
+                    <p className="text-foreground group-hover:text-[#f59a88] transition-colors">
                       {COMPANY.email}
                     </p>
                   </div>
@@ -90,8 +90,8 @@ export default function ContactPage() {
               </li>
 
               <li className="flex items-start gap-4">
-                <div className="w-10 h-10 border border-[#539397]/30 flex items-center justify-center flex-shrink-0">
-                  <MapPin size={14} className="text-[#539397]" />
+                <div className="w-10 h-10 border border-[#f59a88]/30 flex items-center justify-center flex-shrink-0">
+                  <MapPin size={14} className="text-[#f59a88]" />
                 </div>
                 <div>
                   <p className="text-[10px] tracking-[0.2em] uppercase text-foreground/40 mb-0.5">
@@ -106,8 +106,8 @@ export default function ContactPage() {
               </li>
 
               <li className="flex items-start gap-4">
-                <div className="w-10 h-10 border border-[#539397]/30 flex items-center justify-center flex-shrink-0">
-                  <Clock size={14} className="text-[#539397]" />
+                <div className="w-10 h-10 border border-[#f59a88]/30 flex items-center justify-center flex-shrink-0">
+                  <Clock size={14} className="text-[#f59a88]" />
                 </div>
                 <div>
                   <p className="text-[10px] tracking-[0.2em] uppercase text-foreground/40 mb-0.5">
@@ -127,7 +127,7 @@ export default function ContactPage() {
                   href={COMPANY.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2.5 border border-border hover:border-[#539397]/50 text-foreground/60 hover:text-[#539397] text-xs tracking-wide transition-all"
+                  className="flex items-center gap-2 px-4 py-2.5 border border-border hover:border-[#f59a88]/50 text-foreground/60 hover:text-[#f59a88] text-xs tracking-wide transition-all"
                 >
                   <Camera size={13} />
                   Instagram
@@ -136,7 +136,7 @@ export default function ContactPage() {
                   href={COMPANY.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2.5 border border-border hover:border-[#539397]/50 text-foreground/60 hover:text-[#539397] text-xs tracking-wide transition-all"
+                  className="flex items-center gap-2 px-4 py-2.5 border border-border hover:border-[#f59a88]/50 text-foreground/60 hover:text-[#f59a88] text-xs tracking-wide transition-all"
                 >
                   <Globe size={13} />
                   Facebook

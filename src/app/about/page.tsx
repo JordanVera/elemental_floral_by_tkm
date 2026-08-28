@@ -23,7 +23,7 @@ export default function AboutPage() {
         />
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 pt-20">
-          <p className="text-[#539397] text-[10px] tracking-[0.4em] uppercase mb-4">
+          <p className="text-[#f59a88] text-[10px] tracking-[0.4em] uppercase mb-4">
             Our Story
           </p>
           <h1 className="font-serif text-white text-5xl sm:text-6xl">About</h1>
@@ -46,13 +46,13 @@ export default function AboutPage() {
           {/* Content: 2/3 columns on large screens */}
           <div className="flex flex-col gap-6 lg:col-span-2">
             <div>
-              <p className="text-[#539397] text-[10px] tracking-[0.35em] uppercase mb-4">
+              <p className="text-[#f59a88] text-[10px] tracking-[0.35em] uppercase mb-4">
                 Principal Designer
               </p>
               <h2 className="font-serif text-foreground text-4xl sm:text-5xl leading-tight">
                 {COMPANY.founder}
               </h2>
-              <p className="text-[#539397] text-sm tracking-[0.15em] uppercase mt-2">
+              <p className="text-[#f59a88] text-sm tracking-[0.15em] uppercase mt-2">
                 {COMPANY.founderTitle}
               </p>
             </div>
@@ -72,7 +72,7 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
                 href="/contact"
-                className="inline-flex justify-center px-8 py-3.5 bg-[#539397] text-black text-xs tracking-[0.2em] uppercase font-medium hover:bg-[#7eaeb1] transition-colors duration-200"
+                className="inline-flex justify-center px-8 py-3.5 bg-[#f59a88] text-black text-xs tracking-[0.2em] uppercase font-medium hover:bg-[#f8b5a8] transition-colors duration-200"
               >
                 Get in Touch
               </Link>
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 href={COMPANY.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex justify-center px-8 py-3.5 border border-border text-foreground text-xs tracking-[0.2em] uppercase hover:border-[#539397] hover:text-[#539397] transition-all duration-200"
+                className="inline-flex justify-center px-8 py-3.5 border border-border text-foreground text-xs tracking-[0.2em] uppercase hover:border-[#f59a88] hover:text-[#f59a88] transition-all duration-200"
               >
                 Follow Me
               </a>
@@ -91,7 +91,7 @@ export default function AboutPage() {
 
       <section className="py-20 px-6 lg:px-8 bg-[#0e0c08]">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#539397] text-[10px] tracking-[0.35em] uppercase mb-4">
+          <p className="text-[#f59a88] text-[10px] tracking-[0.35em] uppercase mb-4">
             Visit Our Showroom
           </p>
           <h2 className="font-serif text-white text-3xl sm:text-4xl mb-6">

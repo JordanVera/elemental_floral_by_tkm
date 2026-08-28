@@ -21,7 +21,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       '/portfolio/weddings/02.jpg',
       '/portfolio/weddings/03.jpg',
       '/portfolio/weddings/04.jpg',
-      '/portfolio/weddings/05.jpg'
+      '/portfolio/weddings/05.jpg',
     ],
   },
   {
@@ -29,13 +29,12 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     title: 'Events & Celebrations',
     photographer: '',
     category: 'Events' as const,
-    cover: '/portfolio/events/01.jpg',
+    cover: '/portfolio/events/03.jpg',
     images: [
-      '/portfolio/events/01.jpg',
-      '/portfolio/events/02.jpg',
       '/portfolio/events/03.jpg',
+      '/portfolio/events/02.jpg',
       '/portfolio/events/04.jpg',
-      '/portfolio/events/05.jpg'
+      '/portfolio/events/05.jpg',
     ],
   },
   {
@@ -49,7 +48,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       '/portfolio/details/02.jpg',
       '/portfolio/details/03.jpg',
       '/portfolio/details/04.jpg',
-      '/portfolio/details/05.jpg'
+      '/portfolio/details/05.jpg',
     ],
   },
   {
@@ -63,7 +62,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       '/portfolio/installations/02.jpg',
       '/portfolio/installations/03.jpg',
       '/portfolio/installations/04.jpg',
-      '/portfolio/installations/05.jpg'
+      '/portfolio/installations/05.jpg',
     ],
   },
 ];
@@ -72,16 +71,28 @@ export const PORTFOLIO_CATEGORIES: Array<'All' | PortfolioCategory> = [
   'All',
   'Events',
   'Styleshoots',
-  'Weddings'
+  'Weddings',
 ];
 
 export const FEATURED_PROJECTS = PORTFOLIO_PROJECTS.slice(0, 6);
 
 export const HERO_IMAGES = [
-  { src: '/portfolio/weddings/01.jpg', alt: 'Elemental Floral By TKM Design — Wedding Florals' },
-  { src: '/portfolio/events/01.jpg', alt: 'Elemental Floral By TKM Design — Events & Celebrations' },
-  { src: '/portfolio/details/01.jpg', alt: 'Elemental Floral By TKM Design — Floral Details' },
-  { src: '/portfolio/installations/01.jpg', alt: 'Elemental Floral By TKM Design — Installations' },
+  {
+    src: '/hero/hero-1.webp',
+    alt: 'Elemental Floral By TKM Design — Wedding Florals',
+  },
+  {
+    src: '/hero/hero-3.webp',
+    alt: 'Elemental Floral By TKM Design — Floral Details',
+  },
+  {
+    src: '/hero/hero-2.webp',
+    alt: 'Elemental Floral By TKM Design — Events & Celebrations',
+  },
+  {
+    src: '/hero/hero-4.webp',
+    alt: 'Elemental Floral By TKM Design — Installations',
+  },
 ] as const;
 
 export function getProject(slug: string) {
@@ -89,7 +100,9 @@ export function getProject(slug: string) {
 }
 
 export function getAdjacentProjects(slug: string) {
-  const index = PORTFOLIO_PROJECTS.findIndex((project) => project.slug === slug);
+  const index = PORTFOLIO_PROJECTS.findIndex(
+    (project) => project.slug === slug,
+  );
   if (index === -1) return { prev: undefined, next: undefined };
   const last = PORTFOLIO_PROJECTS.length - 1;
   return {

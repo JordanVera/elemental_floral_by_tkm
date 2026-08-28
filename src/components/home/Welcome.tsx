@@ -17,10 +17,10 @@ export default function Welcome() {
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-[1fr_2fr] gap-12 md:gap-16 items-start">
           <motion.div {...anim(0)} className="flex flex-col gap-4">
-            <span className="text-[#539397] text-[10px] tracking-[0.35em] uppercase">
+            <span className="text-[#f59a88] text-[10px] tracking-[0.35em] uppercase">
               Welcome
             </span>
-            <div className="h-px w-16 bg-[#539397]" />
+            <div className="h-px w-16 bg-[#f59a88]" />
             <p className="text-xs tracking-[0.2em] uppercase text-foreground/40 mt-4">
               Houston, Texas
             </p>
@@ -32,7 +32,7 @@ export default function Welcome() {
               className="font-serif text-4xl sm:text-5xl leading-tight text-foreground"
             >
               Unforgettable concepts.{' '}
-              <em className="italic text-[#539397]">Lasting impressions.</em>
+              <em className="italic text-[#f59a88]">Lasting impressions.</em>
             </motion.h2>
 
             <motion.p
@@ -59,7 +59,7 @@ export default function Welcome() {
                 { number: 'Houston', label: 'Local Florist' },
               ].map((stat) => (
                 <div key={stat.label}>
-                  <p className="font-serif text-2xl text-[#539397]">
+                  <p className="font-serif text-2xl text-[#f59a88]">
                     {stat.number}
                   </p>
                   <p className="text-xs text-foreground/50 tracking-wide mt-0.5">
@@ -72,7 +72,7 @@ export default function Welcome() {
             <motion.div {...anim(0.5)}>
               <Link
                 href="/about"
-                className="inline-flex items-center text-[#539397] text-xs tracking-[0.2em] uppercase hover:underline underline-offset-4"
+                className="inline-flex items-center text-[#f59a88] text-xs tracking-[0.2em] uppercase hover:underline underline-offset-4"
               >
                 Meet Tawnya Morse
               </Link>

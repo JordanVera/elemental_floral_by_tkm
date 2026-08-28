@@ -34,7 +34,7 @@ export default function PortfolioGrid() {
             className={cn(
               'px-4 py-2 text-[10px] tracking-[0.22em] uppercase transition-colors duration-200',
               category === item
-                ? 'bg-[#539397] text-black'
+                ? 'bg-[#f59a88] text-black'
                 : 'text-foreground/50 hover:text-foreground',
             )}
           >
@@ -78,7 +78,7 @@ export default function PortfolioGrid() {
                   <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/25" />
                 </div>
                 <div className="mt-4 text-center">
-                  <h2 className="font-serif text-lg text-foreground transition-colors duration-200 group-hover:text-[#539397] sm:text-xl">
+                  <h2 className="font-serif text-lg text-foreground transition-colors duration-200 group-hover:text-[#f59a88] sm:text-xl">
                     {project.title}
                   </h2>
                   {project.photographer ? (

@@ -1,35 +1,34 @@
-import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import { COMPANY } from "@/lib/data";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
+import './globals.css';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+import { COMPANY } from '@/lib/data';
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
+  variable: '--font-inter',
+  subsets: ['latin'],
+  display: 'swap',
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
+const emylis = localFont({
+  src: './fonts/Emylis.otf',
+  variable: '--font-emylis',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
   title: `Elemental Floral By TKM Designs — Houston Floral Design`,
   description:
-    "Elemental Floral By TKM Designs is a full-service Houston florist and floral studio in Houston, TX — specializing in wedding florals, event rentals, and corporate celebrations.",
+    'Elemental Floral By TKM Designs is a full-service Houston florist and floral studio in Houston, TX — specializing in wedding florals, event rentals, and corporate celebrations.',
   keywords:
-    "floral design Houston, wedding florist Houston, event rentals Houston, Thistle and Grace Design, Tawnya Morse florist",
+    'floral design Houston, wedding florist Houston, event rentals Houston, Thistle and Grace Design, Tawnya Morse florist',
   openGraph: {
     title: `Elemental Floral By TKM Designs — Houston Floral Design`,
     description:
-      "Art floral design and event rentals for weddings, galas, and celebrations across Greater Houston.",
-    type: "website",
+      'Art floral design and event rentals for weddings, galas, and celebrations across Greater Houston.',
+    type: 'website',
   },
 };
 
@@ -41,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${playfair.variable} h-full antialiased`}
+      className={`${inter.variable} ${emylis.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Navbar />

@@ -128,11 +128,19 @@ export default function Hero() {
         style={{ opacity }}
         className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center"
       >
+        <Image
+          src="/logo-white.png"
+          alt={COMPANY.name}
+          width={140}
+          height={86}
+          className="h-32 w-auto sm:h-32 mb-6"
+          priority
+        />
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-6 text-xs tracking-[0.4em] text-[#539397] uppercase"
+          className="mb-6 text-xs tracking-[0.4em] text-[#f59a88] uppercase"
         >
           Art Floral Design · Houston
         </motion.p>
@@ -141,9 +149,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.35 }}
-          className="max-w-4xl font-serif text-5xl leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
+          className="max-w-4xl font-serif text-5xl leading-[1.2] text-white sm:text-6xl md:text-7xl lg:text-8xl"
         >
-          Where Design Meets <em className="italic text-[#539397]">Beauty</em>
+          Where Design Meets <em className="italic text-[#f59a88]">Beauty</em>
         </motion.h1>
 
         <motion.p
@@ -165,13 +173,13 @@ export default function Hero() {
         >
           <Link
             href="/contact"
-            className="bg-[#539397] px-8 py-3.5 text-xs font-medium tracking-[0.2em] text-black uppercase transition-colors duration-200 hover:bg-[#7eaeb1]"
+            className="bg-[#f59a88] px-8 py-3.5 text-xs font-medium tracking-[0.2em] text-black uppercase transition-colors duration-200 hover:bg-[#f8b5a8]"
           >
             Get in Touch
           </Link>
           <Link
             href="/portfolio"
-            className="border border-white/50 px-8 py-3.5 text-xs tracking-[0.2em] text-white uppercase transition-all duration-200 hover:border-[#539397] hover:text-[#539397]"
+            className="border border-white/50 px-8 py-3.5 text-xs tracking-[0.2em] text-white uppercase transition-all duration-200 hover:border-[#f59a88] hover:text-[#f59a88]"
           >
             View Portfolio
           </Link>

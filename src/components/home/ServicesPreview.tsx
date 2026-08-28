@@ -22,7 +22,7 @@ export default function ServicesPreview() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-[#539397] text-[10px] tracking-[0.35em] uppercase mb-4"
+            className="text-[#f59a88] text-[10px] tracking-[0.35em] uppercase mb-4"
           >
             What We Do
           </motion.p>
@@ -47,7 +47,7 @@ export default function ServicesPreview() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: i * 0.15 }}
-                className="group relative overflow-hidden bg-[#161410] border border-white/5 hover:border-[#539397]/40 transition-all duration-500"
+                className="group relative overflow-hidden bg-[#161410] border border-white/5 hover:border-[#f59a88]/40 transition-all duration-500"
               >
                 <div className="relative h-64 overflow-hidden">
                   <Image
@@ -62,14 +62,14 @@ export default function ServicesPreview() {
 
                 <div className="p-7">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 rounded-full border border-[#539397]/30 flex items-center justify-center">
-                      <Icon size={14} className="text-[#539397]" />
+                    <div className="w-8 h-8 rounded-full border border-[#f59a88]/30 flex items-center justify-center">
+                      <Icon size={14} className="text-[#f59a88]" />
                     </div>
-                    <span className="text-[#539397] text-[10px] tracking-[0.3em] uppercase">
+                    <span className="text-[#f59a88] text-[10px] tracking-[0.3em] uppercase">
                       {service.subtitle}
                     </span>
                   </div>
-                  <h3 className="font-serif text-white text-2xl mb-3">
+                  <h3 className="font-sans text-white text-2xl mb-3">
                     {service.title}
                   </h3>
                   <p className="text-white/55 text-sm leading-relaxed line-clamp-3">
@@ -77,7 +77,7 @@ export default function ServicesPreview() {
                   </p>
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-2 mt-6 text-[#539397] text-xs tracking-[0.2em] uppercase group/link hover:gap-3 transition-all duration-200"
+                    className="inline-flex items-center gap-2 mt-6 text-[#f59a88] text-xs tracking-[0.2em] uppercase group/link hover:gap-3 transition-all duration-200"
                   >
                     Inquire
                     <ArrowRight
