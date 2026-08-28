@@ -45,7 +45,7 @@ export default function PortfolioTeaser() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
           {FEATURED_PROJECTS.map((project, index) => (
             <motion.div
               key={project.slug}
@@ -68,7 +68,7 @@ export default function PortfolioTeaser() {
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-90" />
                   <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
-                    <h3 className="font-serif text-lg text-white sm:text-xl">
+                    <h3 className="font-serif text-2xl text-white sm:text-5xl">
                       {project.title}
                     </h3>
                     {project.photographer ? (

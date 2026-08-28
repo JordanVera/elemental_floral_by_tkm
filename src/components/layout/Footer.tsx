@@ -16,7 +16,7 @@ export default function Footer() {
                 alt={COMPANY.name}
                 width={140}
                 height={86}
-                className="h-12 w-auto object-contain"
+                className="h-16  md:24 w-auto object-contain"
               />
             </Link>
             <p className="max-w-xs text-sm leading-relaxed">

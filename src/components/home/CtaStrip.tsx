@@ -22,6 +22,14 @@ export default function CtaStrip() {
       </div>
 
       <div className="relative mx-auto max-w-4xl text-center">
+        <Image
+          src="/painted-rose.png"
+          alt={COMPANY.name}
+          width={140}
+          height={86}
+          className="h-16 w-auto mb-6 mx-auto"
+          priority
+        />
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -159,9 +159,7 @@ export default function ContactPage() {
           </div>
 
           <div className="bg-card border border-border p-8 md:p-10">
-            <h3 className="font-serif text-foreground text-2xl mb-2">
-              Send an Inquiry
-            </h3>
+            <h3 className=" text-foreground text-2xl mb-2">Send an Inquiry</h3>
             <p className="text-foreground/50 text-sm mb-8">
               Tell us about your event and we&apos;ll be in touch to discuss
               your floral design vision.
