@@ -2,13 +2,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, MapPin, Mail } from 'lucide-react';
 import { COMPANY, NAV_LINKS } from '@/lib/data';
+import { SERVICE_AREAS, SERVICE_AREAS_INDEX } from '@/lib/service-areas';
 import SocialLinks from '@/components/layout/SocialLinks';
 
 export default function Footer() {
   return (
     <footer className="bg-[#0e0c08] text-white/70">
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-8 lg:px-8">
-        <div className="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-3">
               <Image
@@ -54,7 +55,32 @@ export default function Footer() {
               <li className="text-sm">Delivery & Setup</li>
             </ul>
           </div>
-          <div className="lg:col-span-3 md:col-span-2">
+          <div>
+            <h4 className="mb-6 text-xs tracking-[0.25em] text-white uppercase">
+              Service Areas
+            </h4>
+            <ul className="flex flex-col gap-3">
+              <li>
+                <Link
+                  href={SERVICE_AREAS_INDEX.href}
+                  className="text-sm transition-colors hover:text-[var(--gold,#C9A84C)]"
+                >
+                  All Areas
+                </Link>
+              </li>
+              {SERVICE_AREAS.map((area) => (
+                <li key={area.slug}>
+                  <Link
+                    href={`/service-areas/${area.slug}`}
+                    className="text-sm transition-colors hover:text-[var(--gold,#C9A84C)]"
+                  >
+                    {area.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="lg:col-span-4 md:col-span-2">
             <h4 className="mb-6 text-xs tracking-[0.25em] text-white uppercase">
               Contact
             </h4>

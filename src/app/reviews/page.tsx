@@ -21,7 +21,7 @@ const jsonLd = {
     streetAddress: COMPANY.address,
     addressLocality: 'Houston',
     addressRegion: 'TX',
-    postalCode: '77092',
+    postalCode: '77084',
   },
   aggregateRating: {
     '@type': 'AggregateRating',
@@ -71,8 +71,8 @@ export default function ReviewsPage() {
 
       <section className="relative h-64 overflow-hidden sm:h-80">
         <Image
-          src="https://thistleandgracedesign.com/wp-content/uploads/2025/10/6-scaled.jpg"
-          alt="Floral design by Elemental Floral By TKM Designs"
+          src="/hero/hero-3.webp"
+          alt={`Floral design by ${COMPANY.name}`}
           fill
           priority
           className="object-cover object-center"
@@ -83,7 +83,9 @@ export default function ReviewsPage() {
           <p className="mb-4 text-[10px] tracking-[0.4em] text-[#f59a88] uppercase">
             Client Love
           </p>
-          <h1 className="font-serif text-5xl text-white sm:text-6xl">Reviews</h1>
+          <h1 className="font-serif text-5xl text-white sm:text-6xl">
+            Reviews
+          </h1>
         </div>
       </section>
 
@@ -99,9 +101,9 @@ export default function ReviewsPage() {
             </p>
           </div>
           <p className="leading-relaxed text-foreground/60">
-            Couples, families, and event planners across Greater Houston trust
-            Steve and the Thistle &amp; Grace team to bring their celebrations
-            to life. Here is what clients are saying on Google.
+            Couples, families, and event planners across Greater Houston trust{' '}
+            {COMPANY.founder} and the {COMPANY.name} team to bring their
+            celebrations to life. Here is what clients are saying on Google.
           </p>
           <a
             href={GOOGLE_REVIEWS.url}

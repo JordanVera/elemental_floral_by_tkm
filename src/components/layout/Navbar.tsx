@@ -9,6 +9,7 @@ import { Menu, X, Phone } from 'lucide-react';
 import { NAV_LINKS, COMPANY } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import SocialLinks from '@/components/layout/SocialLinks';
+import ServiceAreasNav from '@/components/layout/ServiceAreasNav';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -55,7 +56,36 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden items-center gap-1 lg:flex">
-          {NAV_LINKS.map((link) => {
+          {NAV_LINKS.slice(0, 2).map((link) => {
+            const isActive =
+              pathname === link.href ||
+              (link.href !== '/' && pathname.startsWith(`${link.href}/`));
+
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  'group relative rounded-full px-2.5 py-1.5 text-[11px] font-medium tracking-widest uppercase transition-colors xl:px-3',
+                  isActive
+                    ? 'text-[#f59a88]'
+                    : 'text-white/80 hover:text-white',
+                )}
+              >
+                {link.label}
+                <span
+                  className={cn(
+                    'absolute inset-x-3.5 -bottom-0.5 h-px bg-[#f59a88] transition-transform duration-300',
+                    isActive
+                      ? 'scale-x-100'
+                      : 'scale-x-0 group-hover:scale-x-100',
+                  )}
+                />
+              </Link>
+            );
+          })}
+          <ServiceAreasNav />
+          {NAV_LINKS.slice(2).map((link) => {
             const isActive =
               pathname === link.href ||
               (link.href !== '/' && pathname.startsWith(`${link.href}/`));
@@ -132,7 +162,32 @@ export default function Navbar() {
             )}
           >
             <div className="flex flex-col">
-              {NAV_LINKS.map((link) => {
+              {NAV_LINKS.slice(0, 2).map((link) => {
+                const isActive =
+                  pathname === link.href ||
+                  (link.href !== '/' && pathname.startsWith(`${link.href}/`));
+
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className={cn(
+                      'rounded-xl px-3 py-2.5 text-sm font-medium transition hover:bg-[#f59a88]/10',
+                      isActive
+                        ? 'text-[#f59a88]'
+                        : 'text-white hover:text-[#f59a88]',
+                    )}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+              <ServiceAreasNav
+                variant="mobile"
+                onNavigate={() => setMobileOpen(false)}
+              />
+              {NAV_LINKS.slice(2).map((link) => {
                 const isActive =
                   pathname === link.href ||
                   (link.href !== '/' && pathname.startsWith(`${link.href}/`));

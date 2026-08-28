@@ -11,7 +11,7 @@ export default function CtaStrip() {
     <section className="relative overflow-hidden px-6 py-24 lg:px-8">
       <div className="absolute inset-0">
         <Image
-          src="https://thistleandgracedesign.com/wp-content/uploads/2025/10/10-scaled.jpg"
+          src="/pink-flowers-cta.jpg"
           alt=""
           fill
           className="object-cover object-center"

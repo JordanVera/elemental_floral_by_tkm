@@ -8,7 +8,7 @@ import { PORTFOLIO_PROJECTS } from '@/lib/portfolio';
 export const metadata: Metadata = {
   title: `Portfolio | ${COMPANY.name}`,
   description:
-    'Browse wedding florals, gala installations, and event design work by Thistle & Grace Design in Houston, TX.',
+    `Browse wedding florals, gala installations, and event design work by ${COMPANY.name} in Houston, TX.`,
 };
 
 export default function PortfolioPage() {
@@ -16,8 +16,8 @@ export default function PortfolioPage() {
     <>
       <section className="relative h-64 overflow-hidden sm:h-80">
         <Image
-          src="https://thistleandgracedesign.com/wp-content/uploads/2025/10/5-scaled.jpg"
-          alt="Portfolio — Thistle & Grace Design"
+          src="/hero/hero-2.webp"
+          alt={`Portfolio — ${COMPANY.name}`}
           fill
           priority
           className="object-cover object-center"
@@ -38,7 +38,7 @@ export default function PortfolioPage() {
         <div className="mx-auto mb-14 max-w-2xl text-center">
           <p className="leading-relaxed text-foreground/60">
             {PORTFOLIO_PROJECTS.length} weddings, styleshoots, and celebrations
-            designed by {COMPANY.founder} and the T&G Design team. Follow{' '}
+            designed by {COMPANY.founder} and the {COMPANY.shortName} team. Follow{' '}
             <a
               href={COMPANY.instagram}
               target="_blank"

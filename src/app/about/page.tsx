@@ -14,8 +14,8 @@ export default function AboutPage() {
     <>
       <section className="relative h-64 sm:h-80 overflow-hidden">
         <Image
-          src="https://thistleandgracedesign.com/wp-content/uploads/2025/10/6-scaled.jpg"
-          alt="About Elemental Floral By TKM Design Design"
+          src="/hero/hero-1.webp"
+          alt={`About ${COMPANY.name}`}
           fill
           priority
           className="object-cover object-center"
@@ -81,7 +81,7 @@ export default function AboutPage() {
             Visit Our Showroom
           </p>
           <h2 className="font-serif text-white text-3xl sm:text-4xl mb-6">
-            Experience T&G Design in Person
+            Experience {COMPANY.shortName} in Person
           </h2>
           <p className="text-white/60 leading-relaxed mb-8">
             Stop by our Houston studio to explore floral concepts, rental

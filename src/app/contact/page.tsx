@@ -7,7 +7,7 @@ import { COMPANY } from '@/lib/data';
 export const metadata: Metadata = {
   title: `Contact | ${COMPANY.name}`,
   description:
-    'Get in touch with Thistle & Grace Design to discuss wedding florals, event rentals, and floral design for your Houston celebration.',
+    `Get in touch with ${COMPANY.name} to discuss wedding florals, event design, and floral installations for your Houston celebration.`,
 };
 
 export default function ContactPage() {
@@ -15,8 +15,8 @@ export default function ContactPage() {
     <>
       <section className="relative h-64 sm:h-80 overflow-hidden">
         <Image
-          src="/contact-showroom.jpg"
-          alt="Visit Thistle & Grace Design showroom"
+          src="/hero/hero-4.webp"
+          alt={`Contact ${COMPANY.name}`}
           fill
           priority
           className="object-cover object-center"
@@ -146,14 +146,14 @@ export default function ContactPage() {
 
             <div className="overflow-hidden border border-border">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.2!2d-95.456!3d29.81!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c6b8e8e8e8e8%3A0x0!2s4930%20Dacoma%20St%20Suite%20F%2C%20Houston%2C%20TX%2077092!5e0!3m2!1sen!2sus!4v1"
+                src="https://maps.google.com/maps?q=16524+Park+Row+Dr,+Houston,+TX+77084&output=embed"
                 width="100%"
                 height="200"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Thistle & Grace Design location"
+                title={`${COMPANY.name} location`}
               />
             </div>
           </div>

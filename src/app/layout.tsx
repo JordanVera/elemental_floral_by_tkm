@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     'Elemental Floral By TKM Designs is a full-service Houston florist and floral studio in Houston, TX — specializing in wedding florals, event rentals, and corporate celebrations.',
   keywords:
-    'floral design Houston, wedding florist Houston, event rentals Houston, Thistle and Grace Design, Tawnya Morse florist',
+    'floral design Houston, wedding florist Houston, event florals Houston, Elemental Floral By TKM Designs, Tawnya Morse florist',
   openGraph: {
     title: `Elemental Floral By TKM Designs — Houston Floral Design`,
     description:
