@@ -68,7 +68,7 @@ export default function ServiceAreasPage() {
                   <MapPin size={12} />
                   {area.region}
                 </div>
-                <h2 className="font-serif text-2xl text-foreground transition-colors group-hover:text-[#f59a88]">
+                <h2 className="font-serif text-2xl md:text-5xl text-foreground transition-colors group-hover:text-[#f59a88]">
                   {area.name}
                 </h2>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground/55">
